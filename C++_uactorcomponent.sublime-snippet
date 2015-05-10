@@ -1,0 +1,55 @@
+<!-- Copyright (c) 2015 Kyle Rocha -->
+<snippet>
+    <content><![CDATA[
+//
+// Copyright (c) ${1:Year} ${2:Copyright Owner}
+//
+
+#pragma once
+
+#include "$3Component.generated.h"
+
+///////////////////////////////////////////////////////////////////////////////
+//																			 //	
+//                              U$3Component								 //
+//																			 //
+///////////////////////////////////////////////////////////////////////////////
+
+UCLASS(Blueprintable, BlueprintType)
+class U${3:ClassName}Component : public UActorComponent
+{
+	GENEARATED_BODY()
+
+	U$3Component(const FObjectInitializer& Init);
+	
+	$0
+};
+
+
+/* !!!! BEGIN CPP FILE !!!! */
+
+//
+// Copyright (c) ${1} ${2}
+//
+
+#include "${4:PreCompiledHeader}.h"
+
+#include "$3Component.h"
+
+///////////////////////////////////////////////////////////////////////////////
+//																			 //	
+//                              U$3Component								 //
+//																			 //
+///////////////////////////////////////////////////////////////////////////////
+
+U$3Component::U$3Component(const FObjectInitializer& Init)
+	: Super(Init)
+{
+	
+}
+
+]]></content>
+    <tabTrigger>ucomponenent_header</tabTrigger>
+    <scope>source.c++</scope>
+    <description>New Unreal UActorComponent</description>
+</snippet>

@@ -1,0 +1,7 @@
+<!-- Copyright (c) 2015 Kyle Rocha -->
+<snippet>
+    <content><![CDATA[UFUNCTION(${1})]]></content>
+    <tabTrigger>UFUNCTION()</tabTrigger>
+    <scope>source.c++</scope>
+    <description>Empty UFUNCTION()</description>
+</snippet>

@@ -1,0 +1,55 @@
+<!-- Copyright (c) 2015 Kyle Rocha -->
+<snippet>
+    <content><![CDATA[
+//
+// Copyright (c) ${1:Year} ${2:Copyright Owner}
+//
+
+#pragma once
+
+#include "$3.generated.h"
+
+///////////////////////////////////////////////////////////////////////////////
+//																			 //	
+//                              A$3						 //
+//																			 //
+///////////////////////////////////////////////////////////////////////////////
+
+UCLASS(Blueprintable, BlueprintType)
+class A${3:ActorClassName} : public AActor
+{
+	GENEARATED_BODY()
+
+	A$3(const FObjectInitializer& Init);
+	
+	$0
+};
+
+
+/* !!!! BEGIN CPP FILE !!!! */
+
+//
+// Copyright (c) ${1} ${2}
+//
+
+#include "${4:PreCompiledHeader}.h"
+
+#include "$3.h"
+
+///////////////////////////////////////////////////////////////////////////////
+//																			 //	
+//                              A$3						 //
+//																			 //
+///////////////////////////////////////////////////////////////////////////////
+
+A$3::A$3(const FObjectInitializer& Init)
+	: Super(Init)
+{
+	
+}
+
+]]></content>
+    <tabTrigger>aactor</tabTrigger>
+    <scope>source.c++</scope>
+    <description>New Unreal AActor</description>
+</snippet>

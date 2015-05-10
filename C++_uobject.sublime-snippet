@@ -1,0 +1,55 @@
+<!-- Copyright (c) 2015 Kyle Rocha -->
+<snippet>
+    <content><![CDATA[
+//
+// Copyright (c) ${1:Year} ${2:Copyright Owner}
+//
+
+#pragma once
+
+#include "$3.generated.h"
+
+///////////////////////////////////////////////////////////////////////////////
+//																			 //	
+//                              U$3						 //
+//																			 //
+///////////////////////////////////////////////////////////////////////////////
+
+UCLASS(Blueprintable, BlueprintType)
+class U${3:ClassName} : public UObject
+{
+	GENEARATED_BODY()
+
+	U$3(const FObjectInitializer& Init);
+	
+	$0
+};
+
+
+/* !!!! BEGIN CPP FILE !!!! */
+
+//
+// Copyright (c) ${1} ${2}
+//
+
+#include "${4:PreCompiledHeader}.h"
+
+#include "$3.h"
+
+///////////////////////////////////////////////////////////////////////////////
+//																			 //	
+//                              U$3						 //
+//																			 //
+///////////////////////////////////////////////////////////////////////////////
+
+U$3::U$3(const FObjectInitializer& Init)
+	: Super(Init)
+{
+	
+}
+
+]]></content>
+    <tabTrigger>uobject</tabTrigger>
+    <scope>source.c++</scope>
+    <description>New Unreal UObject</description>
+</snippet>
